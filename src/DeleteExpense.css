@@ -1,0 +1,29 @@
+.delete-expense-button {
+   background-color: #e74c3c; 
+   color: white;
+   border: none;
+   padding: 12px 25px;
+   border-radius: 8px; 
+   cursor: pointer;
+   font-size: 1rem;
+   font-weight: bold;
+   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+ }
+ 
+ .delete-expense-button:hover {
+   background-color: #c0392b;
+   transform: translateY(-3px); 
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+ }
+ 
+ .delete-expense-button:active {
+   background-color: #a93226; 
+   transform: translateY(0); 
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+ }
+ 
+ .delete-expense-button:focus {
+   outline: none; 
+   box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.5); 
+ }

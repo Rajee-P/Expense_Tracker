@@ -1,0 +1,123 @@
+/* General Styles for View Expenses */
+.view-expenses-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Reduced gap for better spacing */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px; /* Reduced max width */
+  background-color: #f9f9f9;
+  border-radius: 10px; /* Reduced border radius */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Expense List Container */
+.expense-list-container {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 15px; /* Reduced padding */
+  border-radius: 10px; /* Reduced border radius */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  max-width: 45%; /* Reduced width */
+  overflow-y: auto; /* Add scroll for long lists */
+  max-height: 400px; /* Reduced max height */
+}
+
+.expense-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.expense-item {
+  background-color: #ffffff;
+  margin: 10px 0; /* Reduced margin */
+  padding: 10px 15px; /* Reduced padding */
+  border-radius: 8px; /* Reduced border radius */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.expense-item:hover {
+  transform: translateY(-2px); /* Reduced hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.expense-details {
+  font-size: 0.9rem; /* Reduced font size */
+  color: #2c3e50;
+}
+
+.delete-expense-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px; /* Reduced padding */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem; /* Reduced font size */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.delete-expense-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.delete-expense-button:active {
+  background-color: #a93226;
+  transform: translateY(0);
+}
+
+.no-expenses {
+  font-size: 1rem; /* Reduced font size */
+  color: #7f8c8d;
+  text-align: center;
+  margin-top: 15px; /* Reduced margin */
+}
+
+/* Expense Chart Container */
+.expense-chart-container {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Chart Title */
+.chart-title {
+  font-size: 1.6rem; /* Slightly larger font size */
+  color: #2c3e50;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  text-align: center; /* Ensure the title is centered */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold; /* Make the title bold for emphasis */
+}
+
+.chart-wrapper {
+  width: 100%;
+  height: 300px; /* Reduced height */
+  margin: 0 auto;
+}
+
+.expense-list-title {
+  font-size: 1.5rem; /* Reduced font size */
+  color: #2c3e50;
+  margin-bottom: 15px; /* Reduced margin */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

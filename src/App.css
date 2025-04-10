@@ -1,0 +1,168 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d3748; /* Dark gray-blue for a modern look */
+  padding: 20px 30px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Make the navbar sticky */
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-title {
+  font-size: 2rem; /* Larger font size for better visibility */
+  font-weight: bold;
+  letter-spacing: 1.2px; /* Add spacing for a clean look */
+  color: #edf2f7; /* Light gray for better contrast */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 15px; /* Add spacing between buttons */
+}
+
+.navbar-links button {
+  background-color: #4a90e2; /* Soft blue for buttons */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px; /* Rounded buttons for a modern look */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links button:hover {
+  background-color: #3b82f6; /* Brighter blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.navbar-links button:active {
+  background-color: #2563eb; /* Darker blue when clicked */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar-title {
+    margin-bottom: 15px; /* Add spacing below the title */
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px; /* Reduced gap for smaller screens */
+    width: 100%;
+  }
+
+  .navbar-links button {
+    width: 100%; /* Full-width buttons on smaller screens */
+    text-align: center;
+  }
+}
+/* Home Page Container */
+.home-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9fafb; /* Light gray background for a clean look */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+/* Home Page Title */
+.home-title {
+  font-size: 2.5rem; /* Increased font size for better visibility */
+  color: #1f2937; /* Darker gray for a modern look */
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  font-weight: bold;
+  letter-spacing: 1.5px; /* Add spacing for a clean and professional look */
+  text-transform: uppercase; /* Make the title uppercase for emphasis */
+  text-align: center; /* Ensure the title is centered */
+  line-height: 1.4; /* Add line height for better readability */
+}
+
+/* Home Page Description */
+.home-description {
+  font-size: 1.2rem;
+  color: #4a5568; /* Medium gray for the description */
+  margin-bottom: 30px;
+}
+
+/* Home Page Buttons Container */
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add spacing between buttons */
+}
+
+/* Home Page Buttons */
+.home-button {
+  background-color: #4a90e2; /* Soft blue for buttons */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px; /* Fully rounded buttons for a modern look */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-button:hover {
+  background-color: #3b82f6; /* Brighter blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.home-button:active {
+  background-color: #2563eb; /* Darker blue when clicked */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow */
+}
+
+/* Clear Expenses Button Container */
+.clear-expenses-container {
+  text-align: center;
+  margin-top: 20px; /* Add spacing above the button */
+}
+
+/* Clear Expenses Button */
+.clear-expenses-button {
+  background-color: #e74c3c; /* Red for a destructive action */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px; /* Fully rounded button for a modern look */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.clear-expenses-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.clear-expenses-button:active {
+  background-color: #a93226; /* Even darker red when clicked */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow */
+}
